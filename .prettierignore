@@ -1,0 +1,10 @@
+.cache
+next-env.d.ts
+package.json
+package-lock.json
+public
+.next
+out
+styles
+.babelrc
+.github
