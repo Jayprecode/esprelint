@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"author": "Jeremiah Olayiwola",
 	"description": "Prettier config for gcp4react",
-	"main": "./prettier-config.js",
+	"main": "./prettier-config.json",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Jayprecode/gcp4react"

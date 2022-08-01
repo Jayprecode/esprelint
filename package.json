@@ -30,6 +30,6 @@
 	"scripts": {
 		"publish-eslint-config": "npm publish --workspace @jayprecode/eslint-config",
 		"publish-prettier-config": "npm publish --workspace @jayprecode/prettier-config",
-		"publish-eslint-plugin": "npm publish --workspace @jayprecode/lintstaged-config"
+		"publish-lintstaged-config": "npm publish --workspace @jayprecode/lintstaged-config"
 	}
 }
