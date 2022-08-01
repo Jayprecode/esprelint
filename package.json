@@ -1,10 +1,11 @@
 {
   "name": "gcp4react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "Jeremiah Olayiwola",
   "description": "An accumulation of useful tools for efficient code analyzing and formatting to ensure a smooth development process & Good code practice (GCP) for ReactJS projects",
   "main": "/",
+  "keywords": ["gcp", "react", "eslint", "prettier", "gcp4react", "js", "javascript", "jayprecode", "next", "good code practice"],
   "repository": {
     "type": "git",
     "url": "https://github.com/Jayprecode/gcp4react"
