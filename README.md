@@ -152,3 +152,7 @@ For better understanding and configuration visit [Lintstaged](https://www.npmjs.
 <br />
 <br />
 <br />
+
+## Contributions
+
+Yes please! Feature requests / pull requests are welcome.
