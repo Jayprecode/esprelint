@@ -1,48 +1,38 @@
 {
-  "name": "js-broilerplate4next",
-  "private": true,
+  "name": "gcp4react",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Jeremiah Olayiwola",
+  "description": "An accumulation of useful tools for efficient code analyzing and formatting to ensure a smooth development process & Good code practice (GCP) for ReactJS projects",
+  "main": "/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jayprecode/gcp4react"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "build-export": "next build && next export",
-    "check-types": "tsc --pretty --noEmit",
-    "check-format": "prettier --check .",
-    "check-lint": "eslint . --ext jsx --ext js",
-    "format": "prettier --write .",
-    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
-    "prepare": "husky install"
+    "publish-manual": "npm publish"
   },
-  "dependencies": {
-    "next": "12.0.9",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "bootstrap": "^4.6.0",
-    "normalize.css": "^8.0.1",
-	"prop-types": "^15.7.2",
-	"react-bootstrap": "^1.6.4",
-    "styled-components": "^5.2.3"
-  },
-  "devDependencies": {
+  "peerDependencies": {
     "eslint-config-next": "12.0.9",
     "@babel/core": "^7.15.0",
-	"@babel/eslint-parser": "^7.15.0",
-	"@babel/plugin-transform-runtime": "^7.15.0",
-	"@next/eslint-plugin-next": "^11.1.2",
-	"babel-eslint": "^10.1.0",
-	"babel-plugin-styled-components": "^1.13.2",
-	"cra-append-sw": "^2.7.0",
-	"eslint": "7.32.0",
-	"eslint-config-airbnb": "^18.2.1",
-	"eslint-config-prettier": "^8.3.0",
-	"eslint-plugin-import": "^2.20.0",
-	"eslint-plugin-jsx-a11y": "^6.4.1",
-	"eslint-plugin-prettier": "^4.0.0",
-	"eslint-plugin-react": "^7.24.0",
-	"eslint-plugin-react-hooks": "^4.2.0",
-	"husky": "^7.0.0",
-	"lint-staged": "^11.1.2",
-	"next-offline": "^5.0.5",
-	"prettier": "2.4.1"
+	  "@babel/eslint-parser": "^7.15.0",
+	  "@babel/plugin-transform-runtime": "^7.15.0",
+	  "@next/eslint-plugin-next": "^11.1.2",
+	  "babel-eslint": "^10.1.0",
+	  "babel-plugin-styled-components": "^1.13.2",
+	  "eslint": "7.32.0",
+	  "eslint-config-airbnb": "^18.2.1",
+	  "eslint-config-prettier": "^8.3.0",
+	  "eslint-plugin-import": "^2.20.0",
+	  "eslint-plugin-jsx-a11y": "^6.4.1",
+	  "eslint-plugin-prettier": "^4.0.0",
+	  "eslint-plugin-react": "^7.24.0",
+	  "eslint-plugin-react-hooks": "^4.2.0",
+	  "husky": "^7.0.0",
+	  "lint-staged": "^11.1.2",
+	  "prettier": "2.4.1"
   }
 }
