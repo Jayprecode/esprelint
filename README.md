@@ -26,7 +26,6 @@ Therefore, you can make use of the tool [install-peerdeps](https://github.com/na
 
 ```sh
 # with Yarn
-<<<<<<< HEAD
 $ yarn dlx install-peerdeps --dev gcp4react
 
 # with npm
