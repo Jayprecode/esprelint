@@ -1,7 +1,6 @@
 # Documentation
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), and also utilizes 
+This package template project utilizes 
 - [ESLint](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#eslint), 
 - [Prettier](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#prettier), 
 - [Husky](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#husky), 
