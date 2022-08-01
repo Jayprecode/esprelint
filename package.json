@@ -1,6 +1,6 @@
 {
   "name": "gcp4react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "author": "Jeremiah Olayiwola",
   "description": "An accumulation of useful tools for efficient code analyzing and formatting to ensure a smooth development process & Good code practice (GCP) for ReactJS projects",
