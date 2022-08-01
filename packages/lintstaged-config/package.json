@@ -1,9 +1,9 @@
 {
 	"name": "@jayprecode/lintstaged-config",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"license": "MIT",
 	"author": "Jeremiah Olayiwola",
-	"description": "Lintstaged config for gcp4react",
+	"description": "Lintstaged configuration for react projects",
 	"main": "./lintstaged-config.json",
 	"repository": {
 		"type": "git",

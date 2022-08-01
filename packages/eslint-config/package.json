@@ -1,9 +1,9 @@
 {
 	"name": "@jayprecode/eslint-config",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"author": "Jeremiah Olayiwola",
-	"description": "ESLint configuration for gcp4react",
+	"description": "ESLint configuration for react projects",
 	"main": "./eslint-config.js",
 	"repository": {
 		"type": "git",

@@ -1,9 +1,9 @@
 {
 	"name": "@jayprecode/prettier-config",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "MIT",
 	"author": "Jeremiah Olayiwola",
-	"description": "Prettier config for gcp4react",
+	"description": "Prettier configuration for react projects",
 	"main": "./prettier-config.json",
 	"repository": {
 		"type": "git",

@@ -59,7 +59,7 @@ Create a `.prettierrc` file in project root with the following content:
 Create a `.lintstagedrc` file in project root with the following content:
 
 ```
-"jayprecode/lintstaged-config"
+"@jayprecode/lintstaged-config"
 ```
 
 Bonus 
