@@ -1,6 +1,5 @@
 {
-	"name": "gcp4react",
-	"version": "1.0.5",
+	"version": "1.0.5-beta.1",
 	"license": "MIT",
 	"author": "Jeremiah Olayiwola",
 	"packageManager": "npm@8.1.2",
@@ -25,11 +24,12 @@
 		"packages/*"
 	],
 	"publishConfig": {
-		"access": "public"
+		"access": "public",
+		"registry": "https://npm.pkg.github.com/"
 	},
 	"scripts": {
-		"publish-eslint-config": "npm publish --workspace gcp4react/eslint-config",
-		"publish-prettier-config": "npm publish --workspace gcp4react/prettier-config",
-		"publish-eslint-plugin": "npm publish --workspace gcp4react/lintstaged-config"
+		"publish-eslint-config": "npm publish --workspace @jayprecode/eslint-config",
+		"publish-prettier-config": "npm publish --workspace @jayprecode/prettier-config",
+		"publish-eslint-plugin": "npm publish --workspace @jayprecode/lintstaged-config"
 	}
 }
