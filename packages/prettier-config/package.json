@@ -1,6 +1,6 @@
 {
 	"name": "@jayprecode/prettier-config",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"author": "Jeremiah Olayiwola",
 	"description": "Prettier config for gcp4react",
@@ -10,8 +10,7 @@
 		"url": "https://github.com/Jayprecode/gcp4react"
 	},
 	"publishConfig": {
-		"access": "public",
-		"registry": "https://npm.pkg.github.com/"
+		"access": "public"
 	},
 	"scripts": {
 		"publish-manual": "npm publish"

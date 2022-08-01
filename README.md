@@ -13,10 +13,11 @@ This package template utilizes
 
 ```sh
 # with Yarn
-$ yarn add -D gcp4react
+$ yarn add -D @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config
 
 # with npm
-$ npm i -D gcp4react
+$ npm i -D @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config
+
 
 ```
 
@@ -26,10 +27,10 @@ Therefore, you can make use of the tool [install-peerdeps](https://github.com/na
 
 ```sh
 # with Yarn
-$ yarn install-peerdeps --dev gcp4react
+$ install-peerdeps --dev @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config
 
 # with npm
-$ npx install-peerdeps --dev gcp4react
+$ install-peerdeps --dev @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config
 
 
 ```
@@ -41,7 +42,7 @@ Create a `.eslintrc.js` file in project root with the following content:
 
 ```js
 module.exports = {
-  extends: ["gcp4react/eslint-config"],
+  extends: ["@jayprecode/eslint-config"],
 };
 ```
 
@@ -50,7 +51,7 @@ module.exports = {
 Create a `.prettierrc` file in project root with the following content:
 
 ```
-"gcp4react/prettier-config"
+"@jayprecode/prettier-config"
 ```
 
 5. Use Lintstaged config in your project
@@ -58,7 +59,7 @@ Create a `.prettierrc` file in project root with the following content:
 Create a `.lintstagedrc` file in project root with the following content:
 
 ```
-"gcp4react/lintstaged-config"
+"jayprecode/lintstaged-config"
 ```
 
 Bonus 
