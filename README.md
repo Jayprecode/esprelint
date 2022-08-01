@@ -13,10 +13,10 @@ This package template utilizes
 
 ```sh
 # with Yarn
-$ yarn add -D @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config
+$ yarn add -D @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config husky
 
 # with npm
-$ npm i -D @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config
+$ npm i -D @jayprecode/eslint-config @jayprecode/prettier-config @jayprecode/lintstaged-config husky
 
 
 ```
@@ -62,9 +62,74 @@ Create a `.lintstagedrc` file in project root with the following content:
 "@jayprecode/lintstaged-config"
 ```
 
+6. Use Husky config in your project
+
+Run
+
+```sh
+$ npx husky-init
+```
+then locate the `.husky/pre-commit` and paste the following
+
+```sh
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 Styling, testing and building your project before committing'
+
+# Check Prettier standards
+yarn check-format ||
+(
+    echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
+            Prettier Check Failed. Run npm run format, add changes and try commit again.';
+    false;
+)
+
+# Check ESLint Standards
+yarn check-lint ||
+(
+        echo '😤🏀👋😤 Get that weak shit out of here! 😤🏀👋😤
+                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+        false;
+)
+
+# If everything passes... Now we can commit
+echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
+
+yarn build ||
+(
+    echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
+            Next build failed: View the errors above to see why.
+    '
+    false;
+)
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
+```
+
+then your package.json file should look exactly like this below:
+
+```sh
+{
+  ...
+  "scripts": {
+    ...
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext jsx --ext js",
+    "fix": "eslint --fix .",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,yml,yaml}\"",
+    "check-packages": "yarn clean && yarn compile && yarn test && yarn lint",
+    "test-all": "yarn check-format && yarn check-lint && yarn check-types && yarn build",
+    "prepare": "husky install"
+  },
+  ...
+}
+```
+
 Bonus 
 
-6. Configure vscode
+7. Configure vscode
 
 Create a `vscode/settings.json` file in the project root with the following content:
 
