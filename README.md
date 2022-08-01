@@ -41,7 +41,7 @@ Create a `.eslintrc.js` file in project root with the following content:
 
 ```js
 module.exports = {
-  extends: ["gcp4react"],
+  extends: ["gcp4react/eslint-config"],
 };
 ```
 
@@ -50,12 +50,56 @@ module.exports = {
 Create a `.prettierrc` file in project root with the following content:
 
 ```
-"gcp4react"
+"gcp4react/prettier-config"
 ```
+
+5. Use Lintstaged config in your project
+
+Create a `.lintstagedrc` file in project root with the following content:
+
+```
+"gcp4react/lintstaged-config"
+```
+
+Bonus 
+
+6. Configure vscode
+
+Create a `vscode/settings.json` file in the project root with the following content:
+
+```
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#0e851e"
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
+}
+```
+
 
 ## Why?
 
-The essence of the tools listed above implemented in this template, is applicable for the use of ensuring ```Good code practice (GCP)```
+The essence of the tools listed above implemented in this template, is applicable for the use of ensuring ```Good code practice (GCP)``` and also happen to be tools we find ourselves using over and over again in various projects. Sure, using the same handy plugins and configurations is good for consistency, but you have to copy and paste your dependencies from your package.json, .eslintrc.js, and .prettierrc over and over again and that's what the essence of this package is trying to prevent.
+
+When it comes to reducing the amount you have to copy with ESLint and Prettier configs, bundling them into an npm package saves a lot of time and effort for everyone.
 
 # Eslint
 

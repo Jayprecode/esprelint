@@ -1,0 +1,21 @@
+{
+	"name": "gcp4react/prettier-config",
+	"version": "1.0.0",
+	"license": "MIT",
+	"author": "Jeremiah Olayiwola",
+	"description": "Prettier config for gcp4react",
+    "main": "./prettier-config.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Jayprecode/gcp4react"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"publish-manual": "npm publish"
+	},
+	"peerDependencies": {
+		"prettier": "2.5.1"
+	}
+}

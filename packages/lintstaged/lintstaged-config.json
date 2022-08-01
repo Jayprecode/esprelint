@@ -1,0 +1,4 @@
+{
+  "*.+(js|jsx)": ["yarn format", "git add"],
+  "*.+(json|css|md)": ["prettier --write", "git add"]
+}
