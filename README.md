@@ -1,12 +1,42 @@
 # Documentation
 
-This package template project utilizes 
+This package template utilizes 
 - [ESLint](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#eslint), 
 - [Prettier](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#prettier), 
 - [Husky](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#husky), 
-- [Lintstage](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#lint-staged) 
+- [Lint-staged](https://github.com/BrindoSoft/Frontend-structure/edit/dev/README.md#lint-staged) 
 
-and a pretty custom tweaked editor's configuration for vscode.
+
+## To integrate into a new project
+
+1. Install this package as devDependency
+
+```sh
+# with Yarn
+$ yarn add -D gcp4react
+
+# with npm
+$ npm i -D gcp4react
+
+```
+
+2. Use ESLint config in your project
+
+Create a `.eslintrc.js` file in project root with the following content:
+
+```js
+module.exports = {
+  extends: ["gcp4react"],
+};
+```
+
+3. Use Prettier config in your project
+
+Create a `.prettierrc` file in project root with the following content:
+
+```
+"gcp4react"
+```
 
 ## Why?
 
