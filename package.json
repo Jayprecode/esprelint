@@ -3,6 +3,7 @@
 	"version": "1.0.5",
 	"license": "MIT",
 	"author": "Jeremiah Olayiwola",
+	"packageManager": "npm@8.1.2",
 	"description": "An accumulation of useful tools for efficient code analyzing and formatting to ensure a smooth development process & Good code practice (GCP) for ReactJS projects",
 	"keywords": [
 		"gcp",
@@ -28,6 +29,7 @@
 	},
 	"scripts": {
 		"publish-eslint-config": "npm publish --workspace gcp4react/eslint-config",
-		"publish-prettier-config": "npm publish --workspace gcp4react/prettier-config"
+		"publish-prettier-config": "npm publish --workspace gcp4react/prettier-config",
+		"publish-eslint-plugin": "npm publish --workspace gcp4react/lintstaged-config"
 	}
 }
