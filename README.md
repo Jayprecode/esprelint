@@ -20,7 +20,21 @@ $ npm i -D gcp4react
 
 ```
 
-2. Use ESLint config in your project
+2. Install peer dependencies of this package in your project as devDependencies
+
+Therefore, you can make use of the tool [install-peerdeps](https://github.com/nathanhleung/install-peerdeps):
+
+```sh
+# with Yarn
+$ yarn dlx install-peerdeps --dev gcp4react
+
+# with npm
+$ npx install-peerdeps --dev gcp4react
+
+```
+
+
+3. Use ESLint config in your project
 
 Create a `.eslintrc.js` file in project root with the following content:
 
@@ -30,7 +44,7 @@ module.exports = {
 };
 ```
 
-3. Use Prettier config in your project
+4. Use Prettier config in your project
 
 Create a `.prettierrc` file in project root with the following content:
 
